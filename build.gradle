@@ -119,6 +119,10 @@ dependencies {
     implementation "com.vladsch.flexmark:flexmark-ext-gitlab:$flexmarkVersion"
 //    implementation "com.vladsch.flexmark:flexmark-html-parser:$flexmarkVersion"
 
+    // https://mvnrepository.com/artifact/org.jsoup/jsoup
+    compile group: 'org.jsoup', name: 'jsoup', version: '1.13.1'
+
+
     implementation "net.coobird:thumbnailator:$thumbnailatorVersion"
     implementation "net.sf.image4j:image4j:$image4jVersion"
     implementation "org.flywaydb:flyway-core:$flywayVersion"
