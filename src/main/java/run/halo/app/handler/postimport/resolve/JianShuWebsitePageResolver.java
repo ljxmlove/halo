@@ -11,15 +11,15 @@ import run.halo.app.handler.postimport.WebsiteType;
  * @time 2020/5/10 12:05 下午
  */
 @Component
-public class CSDNWebsitePageResolver extends AbstractWebsitePageResolver {
+public class JianShuWebsitePageResolver extends AbstractWebsitePageResolver {
 
     @Override
     protected Element doExtractWebsitePagePostContent(Document doc) {
-        return doc.getElementById("article_content");
+        return doc.getElementsByTag("article").first();
     }
 
     @Override
     public WebsiteType websiteType() {
-        return WebsiteType.CSDN;
+        return WebsiteType.JIAN_SHU;
     }
 }
